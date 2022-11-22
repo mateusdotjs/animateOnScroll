@@ -1,0 +1,16 @@
+.teste {
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border: 5px solid black;
+    transition: .5s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+    transform: translateX(-25px);
+}
