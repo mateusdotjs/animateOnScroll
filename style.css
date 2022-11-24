@@ -1,9 +1,30 @@
+.container {
+    display: flex;
+    gap: 5px;
+}
+
+
 .teste {
     width: 200px;
     height: 200px;
-    margin: 1rem;
-    border: 5px solid black;
-    transition: .5s;
+    border: 4px solid black;
+    transition: .3s;
+}
+
+.teste:first-child {
+    transition-delay: 200ms;
+}
+
+.teste:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.teste:nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.teste:nth-child(4) {
+    transition-delay: 800ms;
 }
 
 .show {
@@ -12,5 +33,15 @@
 
 .hide {
     opacity: 0;
-    transform: translateX(-25px);
+    transform: translateX(-50px);
+}
+
+p {
+    margin: 1rem;
+    transition: .5s;
+}
+
+input {
+    margin: 1rem;
+    transition: .5s;
 }

@@ -1,4 +1,7 @@
 let divs = document.querySelectorAll('.teste')
+let ps = document.querySelectorAll('p')
+let input = document.querySelector('input')
+console.log(input)
 
 let options = {
     root: null,
@@ -8,8 +11,14 @@ let options = {
 
 let observer = new IntersectionObserver(callback, options)
 
+observer.observe(input)
+
 divs.forEach(div => {
     observer.observe(div)
+})
+
+ps.forEach(p => {
+    observer.observe(p)
 })
 
 function callback(entries) {
